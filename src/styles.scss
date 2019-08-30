@@ -58,6 +58,8 @@ body{
     }
     .hero{
         grid-area: hero;
+        width: 100%;
+        height: 100%;
         @include backgroundValues("static/images/hero-mobile.jpg",contain , center , center);
         min-height: 250px;
         @media screen and (min-width:1200px){

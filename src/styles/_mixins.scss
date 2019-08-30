@@ -3,8 +3,8 @@
     background-repeat: no-repeat;
     background-size: $type;  
     background-position: $position1 $position2;
-    --webkit-background-image: url("#{$img}");
-    --webkit-background-repeat: no-repeat;
-    --webkit-background-size: $type;
-    --webkit-background-position: $position1 $position2;
+    -webkit-background-image: url("./#{$img}");
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: $type;
+    -webkit-background-position: $position1 $position2;
 }
