@@ -48,22 +48,20 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    width:auto;
-    background: url(static/images/hero-mobile.jpg) no-repeat;
-    background-position: center center;
-    background-size: contain;
-    --webkit-background: url(static/images/hero-mobile.jpg) no-repeat;
-    --webkit-background-position: center center;
+    background-image: url(static/images/hero-mobile.jpg);
+    --webkit-background-image: url(static/images/hero-mobile.jpg);
+    background-repeat:no-repeat;
+    --webkit-background-repeat:no-repeat;
+    background-size:contain;
     --webkit-background-size: contain;
+    background-position:center;
+    --webkit-background-position:center;
+    
 }
     @media screen and (min-width: 1200px) {
       .main .hero {
-        background: url(static/images/hero-desktop.jpg) no-repeat;
-        background-position: center center;
-        background-size: contain;
-        --webkit-background: url(static/images/hero-desktop.jpg) no-repeat;
-        --webkit-background-position: center center;
-        --webkit-background-size: contain;} }
+        background-image: url(static/images/hero-desktop.jpg);
+        --webkit-background-image: url(static/images/hero-desktop.jpg);} }
   .main .container-form {
     width: 80%;
     margin: 2rem auto 0 auto;
