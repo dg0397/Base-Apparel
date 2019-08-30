@@ -49,13 +49,7 @@ body {
   .main .hero {
     grid-area: hero;
     background-image: url(static/images/hero-mobile.jpg);
-    --webkit-background-image: url(static/images/hero-mobile.jpg);
-    background-repeat:no-repeat;
-    --webkit-background-repeat:no-repeat;
-    background-size:contain;
-    --webkit-background-size: contain;
-    background-position:center;
-    --webkit-background-position:center;
+    
     
 }
     @media screen and (min-width: 1200px) {
