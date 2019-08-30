@@ -26,11 +26,11 @@ body {
       max-width: none;
       height:100vh;
       min-height:646px;
-      background-image: url(static/images/bg-pattern-desktop.svg);
+      background-image: url("./static/images/bg-pattern-desktop.svg");
       background-size: cover;
       background-position: left center;
       background-repeat: no-repeat;
-      --webkit-background-image: url(static/images/bg-pattern-desktop.svg);
+      --webkit-background-image: url("./static/images/bg-pattern-desktop.svg");
       --webkit-background-size: cover;
       --webkit-background-position: left center;
       --webkit-background-repeat: no-repeat; } }
@@ -50,22 +50,22 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    background-image: url(static/images/hero-mobile.jpg);
+    background-image: url("./static/images/hero-mobile.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    --webkit-background-image: url(static/images/hero-mobile.jpg);
+    --webkit-background-image: url("./static/images/hero-mobile.jpg");
     --webkit-background-size: cover;
     --webkit-background-position: left center;
     --webkit-background-repeat: no-repeat;
 }
     @media screen and (min-width: 1200px) {
       .main .hero {
-        background-image: url(static/images/hero-desktop.jpg);
+        background-image: url("./static/images/hero-desktop.jpg");
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
-        --webkit-background-image: url(static/images/hero-desktop.jpg);
+        --webkit-background-image: url("./static/images/hero-desktop.jpg");
         --webkit-background-size: cover;
         --webkit-background-position: left center;
         --webkit-background-repeat: no-repeat
