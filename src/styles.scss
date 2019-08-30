@@ -18,7 +18,7 @@ body{
                 "header"
                 "hero"
                 "form";
-    height: 100vh;
+    height: auto;
     width: 375px;
     margin: 0 auto;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
@@ -30,6 +30,7 @@ body{
                     ". header hero"
                     ". form hero";
         width: auto;
+        height: 100vh;
         @include backgroundValues("static/images/bg-pattern-desktop.svg",cover, left ,center)
     }
     header{

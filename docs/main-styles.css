@@ -13,7 +13,7 @@ body {
   grid-template-rows: auto 3fr 4fr;
   grid-template-columns: 1fr;
   grid-template-areas: "header" "hero" "form";
-  height: 100vh;
+  height: auto;
   width: 375px;
   margin: 0 auto;
   background: linear-gradient(135deg, white, #fff5f5); }
@@ -23,6 +23,7 @@ body {
       grid-template-columns: 100px 3fr 2fr;
       grid-template-areas: ". . hero" ". header hero" ". form hero";
       width: auto;
+      height: 100vh;
       background-image: url(static/images/bg-pattern-desktop.svg);
       background-size: cover;
       background-position: left center;
