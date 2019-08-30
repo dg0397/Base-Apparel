@@ -1,6 +1,10 @@
 @mixin backgroundValues($img,$type,$position1,$position2) {
-    background: url("#{$img}");
+    background-image: url("#{$img}");
     background-size: $type;
     background-position: $position1 $position2;
     background-repeat: no-repeat;  
+    -webkit-background-image: url("#{$img}");
+    -webkit-background-size: $type;
+    -webkit-background-position: $position1 $position2;
+    -webkit-background-repeat: no-repeat;
 }
