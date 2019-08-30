@@ -1,0 +1,6 @@
+@mixin backgroundValues($img,$type,$position1,$position2) {
+    background-image: url($img);
+    background-size: $type;
+    background-position: $position1 $position2;
+    background-repeat: no-repeat;  
+}
