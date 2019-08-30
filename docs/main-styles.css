@@ -24,7 +24,7 @@ body {
       grid-template-areas: ". . hero" ". header hero" ". form hero";
       width: auto;
       height: 100vh;
-      background-image: url(static/images/bg-pattern-desktop.svg);
+      background: url(static/images/bg-pattern-desktop.svg);
       background-size: cover;
       background-position: left center;
       background-repeat: no-repeat; } }
@@ -44,14 +44,14 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    background-image: url(static/images/hero-mobile.jpg);
+    background: url(static/images/hero-mobile.jpg);
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     min-height: 250px; }
     @media screen and (min-width: 1200px) {
       .main .hero {
-        background-image: url(static/images/hero-desktop.jpg);
+        background: url(static/images/hero-desktop.jpg);
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat; } }
@@ -142,7 +142,7 @@ footer {
   color: #413a3a; }
   footer .attribution {
     font-size: 11px;
-    text-align: center; }
+    text-align: center !important; }
   footer .attribution a {
     color: #3e52a3; }
 

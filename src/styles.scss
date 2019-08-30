@@ -157,7 +157,7 @@ body{
 footer{
     margin: 1rem auto .5rem auto;
     color: $dark-grayished;
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center !important; }
     .attribution a { color: hsl(228, 45%, 44%); }
 
 }
