@@ -83,7 +83,7 @@ body {
         .main .container-form p {
           line-height: 1.5rem; } }
     .main .container-form .container__inputs {
-      border: none; }
+      border: none; padding: 0 auto 1,5rem auto;}
       .main .container-form .container__inputs .container__input {
         display: flex;
         justify-content: center;
