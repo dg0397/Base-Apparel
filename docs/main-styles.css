@@ -14,7 +14,8 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: "header" "hero" "form";
   height: auto;
-  width: 375px;
+  min-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   background: linear-gradient(135deg, white, #fff5f5); }
   @media screen and (min-width: 1200px) {

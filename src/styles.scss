@@ -19,7 +19,8 @@ body{
                 "hero"
                 "form";
     height: auto;
-    width: 375px;
+    min-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)); 
     @media screen and (min-width:1200px) {
