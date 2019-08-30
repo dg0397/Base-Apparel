@@ -24,11 +24,11 @@ body {
       grid-template-areas: ". . hero" ". header hero" ". form hero";
       width: auto;
       height: 100vh;
-      background-image: url("static/images/bg-pattern-desktop.svg");
+      background-image: url("./static/images/bg-pattern-desktop.svg");
       background-size: cover;
       background-position: left center;
       background-repeat: no-repeat;
-      -webkit-background-image: url("static/images/bg-pattern-desktop.svg");
+      -webkit-background-image: url("./static/images/bg-pattern-desktop.svg");
       -webkit-background-size: cover;
       -webkit-background-position: left center;
       -webkit-background-repeat: no-repeat; } }
@@ -48,11 +48,11 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    background-image: url("static/images/hero-mobile.jpg");
+    background-image: url("./static/images/hero-mobile.jpg");
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-image: url("static/images/hero-mobile.jpg");
+    -webkit-background-image: url("./static/images/hero-mobile.jpg");
     -webkit-background-size: contain;
     -webkit-background-position: center center;
     -webkit-background-repeat: no-repeat;
