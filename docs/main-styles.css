@@ -48,8 +48,8 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    background-image: url(static/images/hero-mobile.jpg);
-    
+    background-image: url(static/images/hero-mobile.jpg) !important;
+    --webkit-background-image: url(static/images/hero-mobile.jpg) !important;
     
 }
     @media screen and (min-width: 1200px) {
