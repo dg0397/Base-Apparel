@@ -30,7 +30,7 @@ body{
                     ". . hero"
                     ". header hero"
                     ". form hero";
-        width: auto;
+        max-width: none;
         height: 100vh;
         @include backgroundValues("static/images/bg-pattern-desktop.svg",cover, left ,center)
     }
