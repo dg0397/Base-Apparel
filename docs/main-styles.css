@@ -48,14 +48,12 @@ body {
           height: 100%; } }
   .main .hero {
     grid-area: hero;
-    background-image: url(static/images/hero-mobile.jpg) !important;
-    --webkit-background-image: url(static/images/hero-mobile.jpg) !important;
+    background:url(static/images/hero-mobile.jpg) !important;
     
 }
     @media screen and (min-width: 1200px) {
       .main .hero {
-        background-image: url(static/images/hero-desktop.jpg);
-        --webkit-background-image: url(static/images/hero-desktop.jpg);} }
+        background:url(static/images/hero-desktop.jpg);} }
   .main .container-form {
     width: 80%;
     margin: 2rem auto 0 auto;
