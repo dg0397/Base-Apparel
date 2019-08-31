@@ -7,7 +7,7 @@ const input = document.querySelector('input');//select all inputs
 const btn = document.querySelector('button'); //select the button
 const alertDiv = document.querySelector('.container__alert');
 const form = document.querySelector('form');
-const hero = document.querySelector('.hero img');
+const hero = document.querySelector('.container__img img');
 
 form.reset();
 

@@ -60,13 +60,17 @@ body{
         grid-area: hero;
         width: auto;
         height: auto;
-        display: flex;
-        align-items: center;
-        img{
+        .container__img{
+            display: flex;
+            align-items: center;
+            height: 100%;
             width: 100%;
-            height: auto;
-            display: block
-        }
+            img{
+                width: 100%;
+                height: auto;
+                display: block
+            }
+        } 
     }
     .container-form{
         width: 80%;

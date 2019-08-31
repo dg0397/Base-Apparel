@@ -53,13 +53,16 @@ body {
   .main .hero {
     grid-area: hero;
     width: auto;
-    height: auto;
-    display: flex;
-    align-items: center; }
-    .main .hero img {
-      width: 100%;
-      height: auto;
-      display: block; }
+    height: auto; }
+    .main .hero .container__img {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+      .main .hero .container__img img {
+        width: 100%;
+        height: auto;
+        display: block; }
   .main .container-form {
     width: 80%;
     margin: 1rem auto 0 auto;
