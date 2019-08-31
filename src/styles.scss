@@ -57,12 +57,12 @@ body{
         
     }
     .hero{
+        display: flex;
+        align-items: center;
         grid-area: hero;
         width: auto;
         height: auto;
         .container__img{
-            display: flex;
-            align-items: center;
             height: 100%;
             width: 100%;
             img{

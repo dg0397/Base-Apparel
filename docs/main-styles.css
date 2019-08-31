@@ -51,12 +51,12 @@ body {
         .main header .container__logo {
           height: 100%; } }
   .main .hero {
+    display: flex;
+    align-items: center;
     grid-area: hero;
     width: auto;
     height: auto; }
     .main .hero .container__img {
-      display: flex;
-      align-items: center;
       height: 100%;
       width: 100%; }
       .main .hero .container__img img {
