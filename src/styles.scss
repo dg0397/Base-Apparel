@@ -16,7 +16,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-areas: 
                 "header"
-                "hero"
+                "main"
                 "form";
     height: auto;
     min-width: 300px;
@@ -28,9 +28,9 @@ body{
         grid-template-rows: 50px auto 1fr;
         grid-template-columns:  100px 3fr 2fr;
         grid-template-areas: 
-                    ". . hero"
-                    ". header hero"
-                    ". form hero";
+                    ". . main"
+                    ". header main"
+                    ". form main";
         max-width: none;
         height: 100vh;
         min-height:646px;
@@ -59,7 +59,7 @@ body{
     .hero{
         display: flex;
         align-items: center;
-        grid-area: hero;
+        grid-area: main;
         width: auto;
         height: auto;
         .container__img{

@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "hero" "form";
+  grid-template-areas: "header" "main" "form";
   height: auto;
   min-width: 300px;
   max-width: 400px;
@@ -23,7 +23,7 @@ body {
     .main {
       grid-template-rows: 50px auto 1fr;
       grid-template-columns: 100px 3fr 2fr;
-      grid-template-areas: ". . hero" ". header hero" ". form hero";
+      grid-template-areas: ". . main" ". header main" ". form main";
       max-width: none;
       height: 100vh;
       min-height: 646px;
@@ -53,7 +53,7 @@ body {
   .main .hero {
     display: flex;
     align-items: center;
-    grid-area: hero;
+    grid-area: main;
     width: auto;
     height: auto; }
     .main .hero .container__img {
