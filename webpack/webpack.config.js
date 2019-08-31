@@ -52,10 +52,10 @@ module.exports = {
                     },
                     {
                         loader: 'image-webpack-loader',
-                        options: {
+                        /*options: {
                             mozjpeg: {
-                                progressive: true,
-                                quality: 65
+                                progressive: false,
+                                quality: 100
                             },
                             // optipng.enabled: false will disable optipng
                             optipng: {
@@ -72,7 +72,7 @@ module.exports = {
                             webp: {
                                 quality: 100
                             }
-                        }
+                        }*/
                     },
                 ]
             },

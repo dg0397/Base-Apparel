@@ -60,6 +60,7 @@ function changeColorText(){
         this.style.color = "#1c1c1c"
         
 }
+/*Media Queries*/
 
 function backgroundChange(){
     
@@ -74,6 +75,9 @@ function backgroundChange(){
 addEventListener('resize',backgroundChange)
 
 addEventListener('DOMContentLoaded',backgroundChange);
+
+
+/* End Media Queries*/
 
 input.addEventListener('blur', alertInput);
 input.addEventListener("focus", changeColorText);
