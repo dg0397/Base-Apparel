@@ -40,7 +40,8 @@ body {
     display: flex;
     align-items: center;
     padding: 1.5rem;
-    grid-area: header; }
+    grid-row-start: 1;
+    grid-row-end: 2; }
     .main header .container__logo {
       height: 60%; }
       .main header .container__logo img {
@@ -50,10 +51,17 @@ body {
       @media screen and (min-width: 1200px) {
         .main header .container__logo {
           height: 100%; } }
+    @media screen and (min-width: 1200px) {
+      .main header {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3; } }
   .main .hero {
     display: flex;
     align-items: center;
-    grid-area: main;
+    grid-row-start: 2;
+    grid-row-end: 3;
     width: auto;
     height: auto; }
     .main .hero .container__img {
@@ -63,10 +71,17 @@ body {
         width: 100%;
         height: auto;
         display: block; }
+    @media screen and (min-width: 1200px) {
+      .main .hero {
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4; } }
   .main .container-form {
     width: 80%;
     margin: 1rem auto 0 auto;
-    grid-area: form;
+    grid-row-start: 3;
+    grid-row-end: 4;
     text-align: center;
     color: #ce9797; }
     .main .container-form h1 {
@@ -139,6 +154,10 @@ body {
               box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); } }
     @media screen and (min-width: 1200px) {
       .main .container-form {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
         align-self: center;
         width: 55%;
         padding-left: 1.5rem;

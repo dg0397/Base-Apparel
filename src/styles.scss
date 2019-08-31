@@ -41,7 +41,8 @@ body{
         display: flex;
         align-items: center;
         padding: 1.5rem;
-        grid-area: header;
+        grid-row-start: 1;
+        grid-row-end: 2;
         .container__logo{
             height: 60%;
 
@@ -54,12 +55,19 @@ body{
                 height: 100%;
             }
         }
+        @media screen and (min-width:1200px){
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
         
     }
     .hero{
         display: flex;
         align-items: center;
-        grid-area: main;
+        grid-row-start: 2;
+        grid-row-end: 3;
         width: auto;
         height: auto;
         .container__img{
@@ -70,12 +78,19 @@ body{
                 height: auto;
                 display: block
             }
+        }
+        @media screen and (min-width:1200px){
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
         } 
     }
     .container-form{
         width: 80%;
         margin: 1rem auto 0 auto;
-        grid-area: form;
+        grid-row-start: 3;
+        grid-row-end: 4;
         text-align: center;
         color: $desaturated-red;
         h1{
@@ -157,11 +172,15 @@ body{
             }
         }
         @media screen and (min-width:1200px){
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
             align-self: center;
             width: 55%;
             padding-left: 1.5rem;
             margin: 2rem 0;
-            text-align: left
+            text-align: left;
         }
     }
     
