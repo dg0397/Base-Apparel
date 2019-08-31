@@ -7,6 +7,7 @@ const input = document.querySelector('input');//select all inputs
 const btn = document.querySelector('button'); //select the button
 const alertDiv = document.querySelector('.container__alert');
 const form = document.querySelector('form');
+const hero = document.querySelector('.hero img');
 
 form.reset();
 
@@ -59,6 +60,20 @@ function changeColorText(){
         this.style.color = "#1c1c1c"
         
 }
+
+function backgroundChange(){
+    
+    if(innerWidth >= 1200){
+        hero.src = "./static/images/hero-desktop.jpg";
+    }else{
+        hero.src = "./static/images/hero-mobile.jpg";
+    }
+
+}
+
+addEventListener('resize',backgroundChange)
+
+addEventListener('DOMContentLoaded',backgroundChange);
 
 input.addEventListener('blur', alertInput);
 input.addEventListener("focus", changeColorText);
