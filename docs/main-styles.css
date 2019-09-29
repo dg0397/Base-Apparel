@@ -163,6 +163,10 @@ body {
   position: relative;
 }
 
+.main .container-form .container__inputs .container__input label {
+  display: none;
+}
+
 .main .container-form .container__inputs .container__input input {
   width: 100%;
   height: 2.5rem;
