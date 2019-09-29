@@ -79,6 +79,9 @@ body{
                 display: block
             }
         }
+        h2{
+            display: none;
+        }
         @media screen and (min-width:1200px){
             grid-row-start: 1;
             grid-row-end: 4;
@@ -138,6 +141,8 @@ body{
                     -webkit-rtl-ordering: logical;
                     cursor: text;
                     color:$desaturated-red;
+                    border: none;
+                    box-shadow: none;
                     border: 1px solid $desaturated-red;
                     border-radius: 30px;
                     box-sizing: border-box;

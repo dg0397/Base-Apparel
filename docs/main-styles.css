@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+}
 
 body {
   color: black;
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 .main {
   display: grid;
@@ -18,170 +20,242 @@ body {
   max-width: 400px;
   margin: 0 auto;
   padding-bottom: 2rem;
-  background: linear-gradient(135deg, white, #fff5f5); }
-  @media screen and (min-width: 1200px) {
-    .main {
-      grid-template-rows: 50px auto 1fr;
-      grid-template-columns: 100px 3fr 2fr;
-      grid-template-areas: ". . main" ". header main" ". form main";
-      max-width: none;
-      height: 100vh;
-      min-height: 646px;
-      background-image: url(static/images/bg-pattern-desktop.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: left center;
-      -webkit-background-image: url(static/images/bg-pattern-desktop.svg);
-      -webkit-background-repeat: no-repeat;
-      -webkit-background-size: cover;
-      -webkit-background-position: left center;
-      padding-bottom: 0; } }
+  background: linear-gradient(135deg, white, #fff5f5);
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    grid-template-rows: 50px auto 1fr;
+    grid-template-columns: 100px 3fr 2fr;
+    grid-template-areas: ". . main" ". header main" ". form main";
+    max-width: none;
+    height: 100vh;
+    min-height: 646px;
+    background-image: url(static/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    -webkit-background-image: url(static/images/bg-pattern-desktop.svg);
+    -webkit-background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -webkit-background-position: left center;
+    padding-bottom: 0;
+  }
+}
+
+.main header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.main header .container__logo {
+  height: 25px;
+}
+
+.main header .container__logo img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .main header .container__logo {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .main header {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-    .main header .container__logo {
-      height: 25px; }
-      .main header .container__logo img {
-        height: 100%;
-        width: auto;
-        display: block; }
-      @media screen and (min-width: 1200px) {
-        .main header .container__logo {
-          height: auto; } }
-    @media screen and (min-width: 1200px) {
-      .main header {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3; } }
-  .main .hero {
-    display: flex;
-    align-items: center;
     grid-row-start: 2;
     grid-row-end: 3;
-    width: auto;
-    height: auto; }
-    .main .hero .container__img {
-      height: 100%;
-      width: 100%; }
-      .main .hero .container__img img {
-        width: 100%;
-        height: auto;
-        display: block; }
-    @media screen and (min-width: 1200px) {
-      .main .hero {
-        grid-row-start: 1;
-        grid-row-end: 4;
-        grid-column-start: 3;
-        grid-column-end: 4; } }
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+.main .hero {
+  display: flex;
+  align-items: center;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: auto;
+  height: auto;
+}
+
+.main .hero .container__img {
+  height: 100%;
+  width: 100%;
+}
+
+.main .hero .container__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main .hero h2 {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .main .hero {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
+
+.main .container-form {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  color: #ce9797;
+}
+
+.main .container-form h1 {
+  width: 80%;
+  margin: 1rem auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .7rem;
+  font-weight: 600;
+  color: #413a3a;
+}
+
+.main .container-form h1 span {
+  display: block;
+  font-weight: 300;
+  color: #ce9797;
+}
+
+@media screen and (min-width: 1200px) {
+  .main .container-form h1 {
+    font-size: 3.5rem;
+    margin: 1rem 0;
+  }
+}
+
+.main .container-form p {
+  font-size: 14px;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .main .container-form p {
+    line-height: 1.5rem;
+  }
+}
+
+.main .container-form .container__inputs {
+  border: none;
+}
+
+.main .container-form .container__inputs .container__input {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.main .container-form .container__inputs .container__input input {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: .5rem;
+  padding: 1rem;
+  font-size: .7rem;
+  font-weight: bold;
+  text-align: start;
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  color: #ce9797;
+  border: none;
+  box-shadow: none;
+  border: 1px solid #ce9797;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.main .container-form .container__inputs .container__input button {
+  position: absolute;
+  right: -10px;
+  height: 2.5rem;
+  width: 3.5rem;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  box-shadow: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .10s ease;
+}
+
+.main .container-form .container__inputs .container__input button:hover {
+  background: linear-gradient(135deg, #fad6d6, #f1a2a2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main .container-form .container__inputs .container__input button:active {
+  background: linear-gradient(135deg, #f39191, #e75f5f);
+  margin-top: .01rem;
+}
+
+.main .container-form .container__inputs .container__input button img {
+  height: 1rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .main .container-form .container__inputs .container__input button {
+    width: 5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .main .container-form {
-    width: 80%;
-    margin: 1rem auto 0 auto;
     grid-row-start: 3;
     grid-row-end: 4;
-    text-align: center;
-    color: #ce9797; }
-    .main .container-form h1 {
-      width: 80%;
-      margin: 1rem auto;
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: .7rem;
-      font-weight: 600;
-      color: #413a3a; }
-      .main .container-form h1 span {
-        display: block;
-        font-weight: 300;
-        color: #ce9797; }
-      @media screen and (min-width: 1200px) {
-        .main .container-form h1 {
-          font-size: 3.5rem;
-          margin: 1rem 0; } }
-    .main .container-form p {
-      font-size: 14px;
-      margin-bottom: 1.2rem; }
-      @media screen and (min-width: 1200px) {
-        .main .container-form p {
-          line-height: 1.5rem; } }
-    .main .container-form .container__inputs {
-      border: none; }
-      .main .container-form .container__inputs .container__input {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        position: relative; }
-        .main .container-form .container__inputs .container__input input {
-          width: 100%;
-          height: 2.5rem;
-          margin-bottom: .5rem;
-          padding: 1rem;
-          font-size: .7rem;
-          font-weight: bold;
-          text-align: start;
-          -webkit-appearance: textfield;
-          background-color: white;
-          -webkit-rtl-ordering: logical;
-          cursor: text;
-          color: #ce9797;
-          border: 1px solid #ce9797;
-          border-radius: 30px;
-          box-sizing: border-box; }
-        .main .container-form .container__inputs .container__input button {
-          position: absolute;
-          right: -10px;
-          height: 2.5rem;
-          width: 3.5rem;
-          background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
-          box-shadow: none;
-          border: none;
-          border-radius: 30px;
-          cursor: pointer;
-          transition: all .10s ease; }
-          .main .container-form .container__inputs .container__input button:hover {
-            background: linear-gradient(135deg, #fad6d6, #f1a2a2);
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
-          .main .container-form .container__inputs .container__input button:active {
-            background: linear-gradient(135deg, #f39191, #e75f5f);
-            margin-top: .01rem; }
-          .main .container-form .container__inputs .container__input button img {
-            height: 1rem; }
-          @media screen and (min-width: 1200px) {
-            .main .container-form .container__inputs .container__input button {
-              width: 5rem;
-              box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); } }
-    @media screen and (min-width: 1200px) {
-      .main .container-form {
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        align-self: center;
-        width: 55%;
-        padding-left: 1.5rem;
-        margin: 2rem 0;
-        text-align: left; } }
+    grid-column-start: 2;
+    grid-column-end: 3;
+    align-self: center;
+    width: 55%;
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    text-align: left;
+  }
+}
 
 footer {
   margin: 1rem auto .5rem auto;
-  color: #413a3a; }
-  footer .attribution {
-    font-size: 11px;
-    text-align: center !important; }
-  footer .attribution a {
-    color: #3e52a3; }
+  color: #413a3a;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center !important;
+}
+
+footer .attribution a {
+  color: #3e52a3;
+}
 
 /*These classes are add with js*/
 .alert {
   margin-left: 1rem;
   font-size: 12px;
   text-align: left;
-  color: #f96262; }
+  color: #f96262;
+}
 
 .input-alert {
   background: url(static/images/icon-error.svg) no-repeat;
   background-position: 80% center;
-  border: 1px solid #f96262 !important; }
+  border: 1px solid #f96262 !important;
+}
 

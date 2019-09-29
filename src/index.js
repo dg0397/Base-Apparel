@@ -25,7 +25,7 @@ function alertInput(){
 
         this.classList.add('input-alert'); //add the input-alert class to the input
     
-    }else if(this.name === 'email' && !validateEmail(this.value)){
+    }else if(this.type === 'email' && !validateEmail(this.value)){
         
         alertDiv.textContent = 'Please provide a valid email'; //check the email and write a message if email is wrong
         alertDiv.classList.add('alert'); //add the alert class to the div
